@@ -31,10 +31,10 @@ class RoundGradientView: UIView {
     }
     
     private func setUpGradient() {
-        gradient.frame = CGRect(x: self.frame.origin.x,
-                                y: self.frame.origin.y,
-                                width: self.frame.width,
-                                height: self.frame.height )
+        gradient.frame = CGRect(x: self.bounds.origin.x,
+                                y: self.bounds.origin.y,
+                                width: self.bounds.width,
+                                height: self.bounds.height )
         self.layer.addSublayer(gradient)
     }
     

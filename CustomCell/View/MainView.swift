@@ -14,6 +14,7 @@ class MainView: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        self.clipsToBounds = true
         setUpBackgroundViwe()
         setUpRoundGradientFrame()
     }
@@ -33,10 +34,9 @@ class MainView: UIView {
     func setUpRoundGradientFrame() {
         roundGradient = RoundGradientView()
         roundGradient.frame = CGRect(x: self.bounds.origin.x,
-                                     y: self.bounds.origin.y + 20,
+                                     y: self.bounds.origin.y + 50,
                                      width: self.bounds.width,
                                      height: self.bounds.height)
-        roundGradient.setNeedsDisplay()
         self.addSubview(roundGradient)
     }
     

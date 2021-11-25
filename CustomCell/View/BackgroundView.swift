@@ -16,8 +16,8 @@ class BackgroundView: UIView {
         backgroundGradient.colors = [ UIColor.blue.cgColor, UIColor.purple.cgColor]
         backgroundGradient.endPoint = CGPoint(x: 0.5, y: 0.0)
         backgroundGradient.startPoint = CGPoint(x: 0.5, y: 1.0)
-        backgroundGradient.frame = CGRect(x: 0,
-                                          y: 0,
+        backgroundGradient.frame = CGRect(x: self.bounds.origin.x,
+                                          y: self.bounds.origin.y,
                                           width: self.bounds.width,
                                           height: self.bounds.height)
         self.layer.addSublayer(backgroundGradient)

@@ -8,41 +8,33 @@
 import UIKit
 
 class MainView: UIView {
-    private let multiplier: CGFloat = 1.2
-    private var roundGradient: RoundGradientView!
+    
+    public var distance: CGFloat = 50
+    private var roundGradient = RoundGradientView()
     private let backgroundView = BackgroundView()
     
     override func layoutSubviews() {
-        super.layoutSubviews()
         self.clipsToBounds = true
         setUpBackgroundViwe()
         setUpRoundGradientFrame()
     }
     
 //  MARK: -- Subviews
-    func setUpRoundGradientConstraint() {
-        roundGradient = RoundGradientView()
-        self.addSubview(roundGradient)
-        roundGradient.translatesAutoresizingMaskIntoConstraints = false
-        roundGradient.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
-        roundGradient.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 0).isActive = true
-        roundGradient.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 0).isActive = true
-        roundGradient.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 100).isActive = true
-        
-    }
     
     func setUpRoundGradientFrame() {
-        roundGradient = RoundGradientView()
-        roundGradient.frame = CGRect(x: self.bounds.origin.x,
-                                     y: self.bounds.origin.y + 50,
-                                     width: self.bounds.width,
-                                     height: self.bounds.height)
+        roundGradient.frame = CGRect(x: 0,
+                                     y: distance,
+                                     width: self.frame.width,
+                                     height: self.frame.height * 2)
+        roundGradient.center.x = backgroundView.center.x
         self.addSubview(roundGradient)
     }
     
     func setUpBackgroundViwe() {
-        backgroundView.frame = self.frame
+        backgroundView.frame = CGRect(x: 0,
+                                      y: 0,
+                                      width: self.bounds.width,
+                                      height: self.bounds.height)
         self.addSubview(backgroundView)
     }
-
 }

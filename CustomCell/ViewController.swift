@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let myView = MainView(frame: CGRect(x: 0, y: 0, width: 150, height: 300))
+        let myView = MainView(frame: CGRect(x: 100, y: 100, width: 150, height: 250))
         view.addSubview(myView)
     }
 

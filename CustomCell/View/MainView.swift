@@ -9,29 +9,40 @@ import UIKit
 
 class MainView: UIView {
     private let multiplier: CGFloat = 1.2
-    
-    private let roundGradient = RoundGradientView()
+    private var roundGradient: RoundGradientView!
     private let backgroundView = BackgroundView()
     
     override func layoutSubviews() {
+        super.layoutSubviews()
         setUpBackgroundViwe()
-        setUpRoundGradient()
+        setUpRoundGradientFrame()
     }
     
 //  MARK: -- Subviews
-    func setUpRoundGradient() {
-        roundGradient.frame = CGRect(x: 0,
-                                     y: 105,
-                                     width: self.frame.width * multiplier,
-                                     height: self.frame.height * multiplier)
-        roundGradient.center.x = self.center.x
+    func setUpRoundGradientConstraint() {
+        roundGradient = RoundGradientView()
+        self.addSubview(roundGradient)
+        roundGradient.translatesAutoresizingMaskIntoConstraints = false
+        roundGradient.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
+        roundGradient.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 0).isActive = true
+        roundGradient.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 0).isActive = true
+        roundGradient.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 100).isActive = true
+        
+    }
+    
+    func setUpRoundGradientFrame() {
+        roundGradient = RoundGradientView()
+        roundGradient.frame = CGRect(x: self.bounds.origin.x,
+                                     y: self.bounds.origin.y + 20,
+                                     width: self.bounds.width,
+                                     height: self.bounds.height)
+        roundGradient.setNeedsDisplay()
         self.addSubview(roundGradient)
     }
     
     func setUpBackgroundViwe() {
         backgroundView.frame = self.frame
         self.addSubview(backgroundView)
-        
     }
 
 }

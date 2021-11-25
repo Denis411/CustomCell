@@ -18,7 +18,6 @@ class RoundGradientView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.clipsToBounds = true
-        backgroundColor = .red
     }
     
     required init?(coder: NSCoder) {
@@ -26,15 +25,16 @@ class RoundGradientView: UIView {
     }
     
     override func layoutSubviews() {
+        super.layoutSubviews()
         self.layer.cornerRadius = self.bounds.width / 2
         setUpGradient()
     }
     
     private func setUpGradient() {
-        gradient.frame = CGRect(x: self.bounds.origin.x,
-                                y: self.bounds.origin.y,
-                                width: self.bounds.width,
-                                height: self.bounds.height )
+        gradient.frame = CGRect(x: self.frame.origin.x,
+                                y: self.frame.origin.y,
+                                width: self.frame.width,
+                                height: self.frame.height )
         self.layer.addSublayer(gradient)
     }
     

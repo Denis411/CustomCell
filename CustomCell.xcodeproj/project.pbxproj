@@ -16,6 +16,7 @@
 		96E38D31274F878F000F0BCC /* RoundGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E38D30274F878F000F0BCC /* RoundGradientView.swift */; };
 		96E38D34274FB0F2000F0BCC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E38D33274FB0F2000F0BCC /* MainView.swift */; };
 		96E38D37274FB348000F0BCC /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E38D36274FB348000F0BCC /* BackgroundView.swift */; };
+		96E38D39275016AC000F0BCC /* GradientColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E38D38275016AC000F0BCC /* GradientColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		96E38D30274F878F000F0BCC /* RoundGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundGradientView.swift; sourceTree = "<group>"; };
 		96E38D33274FB0F2000F0BCC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		96E38D36274FB348000F0BCC /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		96E38D38275016AC000F0BCC /* GradientColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				96E38D33274FB0F2000F0BCC /* MainView.swift */,
 				96E38D30274F878F000F0BCC /* RoundGradientView.swift */,
 				96E38D36274FB348000F0BCC /* BackgroundView.swift */,
+				96E38D38275016AC000F0BCC /* GradientColors.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96E38D39275016AC000F0BCC /* GradientColors.swift in Sources */,
 				96E38D1F274F7E01000F0BCC /* ViewController.swift in Sources */,
 				96E38D34274FB0F2000F0BCC /* MainView.swift in Sources */,
 				96E38D37274FB348000F0BCC /* BackgroundView.swift in Sources */,

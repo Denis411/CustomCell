@@ -11,12 +11,21 @@ class ViewController: UIViewController {
 
     var tableView: UITableView!
     var firstCellHeight: CGFloat = 150
+    let myView = MainView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let myView = MainView(frame: CGRect(x: 100, y: 100, width: 150, height: 250))
         view.addSubview(myView)
+        myViewConstraints()
+    }
+    
+    func myViewConstraints() {
+        myView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+        myView.topAnchor.constraint(equalTo: view.topAnchor),
+        myView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+        myView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+        myView.trailingAnchor.constraint(equalTo: view.trailingAnchor)])
     }
 
 }

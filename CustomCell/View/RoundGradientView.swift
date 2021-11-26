@@ -7,33 +7,35 @@
 
 import UIKit
 
+/// A UIView with a round gradient
 class RoundGradientView: UIView {
 
     private var gradient: CAGradientLayer = {
        let gradient = CAGradientLayer()
-        gradient.colors = [UIColor.orange.cgColor, UIColor.red.cgColor]
+        gradient.colors = [topRoundGradient.cgColor, bottomRoundGradient.cgColor]
         return gradient
     }()
     
     override func layoutSubviews() {
         self.clipsToBounds = true
         setUpGradient()
-        setUpCornderRadius()
+        self.layer.cornerRadius = self.bounds.width / 2
     }
     
     private func setUpGradient() {
+        let height: CGFloat
+        let widht : CGFloat
+        if self.frame.width > self.frame.height {
+            height = self.frame.width
+            widht  = self.frame.width
+        } else {
+            height = self.frame.height
+            widht  = self.frame.width
+        }
         gradient.frame = CGRect(x: 0,
                                 y: 0,
-                                width: self.frame.width * 1.5,
-                                height: self.frame.height * 1.5)
+                                width: widht,
+                                height: height)
         self.layer.addSublayer(gradient)
-    }
-    
-    private func setUpCornderRadius() {
-        if self.frame.width < self.frame.height {
-            self.layer.cornerRadius = self.bounds.width / 2
-        }else {
-            self.layer.cornerRadius = self.bounds.height / 2
-        }
     }
 }

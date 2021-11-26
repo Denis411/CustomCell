@@ -10,23 +10,36 @@ import UIKit
 class ViewController: UIViewController {
 
     var tableView: UITableView!
-    var firstCellHeight: CGFloat = 150
-    let myView = MainView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(myView)
-        myViewConstraints()
+        setUpTableView()
+        
     }
     
-    func myViewConstraints() {
-        myView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-        myView.topAnchor.constraint(equalTo: view.topAnchor),
-        myView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-        myView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-        myView.trailingAnchor.constraint(equalTo: view.trailingAnchor)])
+    func setUpTableView() {
+        tableView = UITableView(frame: view.frame)
+        view.addSubview(tableView)
+        tableView.delegate = self
+        tableView.dataSource = self
+        let nib = UINib(nibName: "StaticTVCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: StaticTVCell.identifier)
     }
+
+}
+
+extension ViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: StaticTVCell.identifier) as! StaticTVCell
+        cell.label.text = "Fuck this shit"
+        return cell
+    }
+    
+    
 
 }
 

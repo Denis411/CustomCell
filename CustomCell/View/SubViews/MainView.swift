@@ -11,6 +11,7 @@ import UIKit
 /// -Properties
 /// 1) distance - distance bewteen the top of self and the round gradient,
 /// 2) multiplier - visible "corner radius" of round gradient
+@IBDesignable
 class MainView: UIView {
 
     public var distance: CGFloat = 105.73

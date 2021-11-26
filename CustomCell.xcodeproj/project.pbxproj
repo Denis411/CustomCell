@@ -115,7 +115,7 @@
 				96E38D1E274F7E01000F0BCC /* ViewController.swift */,
 				96E38D28274F7E04000F0BCC /* Info.plist */,
 				96D2D59B27512B8800D96D03 /* Design */,
-				96E38D35274FB101000F0BCC /* View */,
+				96E38D35274FB101000F0BCC /* StaticCell */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -132,14 +132,14 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
-		96E38D35274FB101000F0BCC /* View */ = {
+		96E38D35274FB101000F0BCC /* StaticCell */ = {
 			isa = PBXGroup;
 			children = (
 				96E38D402750C013000F0BCC /* SubViews */,
 				96E38D3C2750C00D000F0BCC /* StaticTVCell.swift */,
 				96E38D3D2750C00D000F0BCC /* StaticTVCell.xib */,
 			);
-			path = View;
+			path = StaticCell;
 			sourceTree = "<group>";
 		};
 		96E38D402750C013000F0BCC /* SubViews */ = {

@@ -11,7 +11,6 @@ class StaticTVCell: UITableViewCell {
 
     static let identifier = "StaticTVCell"
     
-    
     @IBOutlet weak var background: MainView!
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var weatherImage: UIImageView!
@@ -19,7 +18,6 @@ class StaticTVCell: UITableViewCell {
     @IBOutlet weak var feelsLike: UILabel!
     
     override func awakeFromNib() {
-        
         super.awakeFromNib()
     }
     

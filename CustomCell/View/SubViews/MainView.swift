@@ -9,8 +9,10 @@ import UIKit
 
 /// MainView consists of 2 subviews a  background gradient and a round gradient.
 /// -Properties
-/// 1) distance - distance bewteen the top of self and the round gradient,
-/// 2) multiplier - visible "corner radius" of round gradient
+/// 1) colorStratagy - changes colors of gradients of subviews
+/// 2) distance         - distance bewteen the top of self and the round gradient,
+/// 3) multiplier        - visible "corner radius" of round gradient
+///
 @IBDesignable
 final class MainView: UIView {
     
@@ -28,12 +30,15 @@ final class MainView: UIView {
     }
 //  MARK: -- INITs
     init(frame: CGRect, colorStratagy: ColorStratagy) {
-        super.init(frame: frame)
         self.colorStratagy = colorStratagy
+        super.init(frame: frame)
+        applyColorStratagy()
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        self.colorStratagy = DayStratagy()
+        super.init(coder: coder)
+        applyColorStratagy()
     }
     //  MARK: -- Subviews
     

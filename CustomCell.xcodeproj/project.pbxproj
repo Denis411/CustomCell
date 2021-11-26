@@ -80,6 +80,15 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		96D2D59B27512B8800D96D03 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				96E38D38275016AC000F0BCC /* CustomColors.swift */,
+				96D2D5882750EB6300D96D03 /* Fonts */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
 		96E38D0E274F7E01000F0BCC = {
 			isa = PBXGroup;
 			children = (
@@ -122,7 +131,7 @@
 		96E38D35274FB101000F0BCC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				96D2D5882750EB6300D96D03 /* Fonts */,
+				96D2D59B27512B8800D96D03 /* Design */,
 				96E38D402750C013000F0BCC /* SubViews */,
 				96E38D3C2750C00D000F0BCC /* StaticTVCell.swift */,
 				96E38D3D2750C00D000F0BCC /* StaticTVCell.xib */,
@@ -136,7 +145,6 @@
 				96E38D33274FB0F2000F0BCC /* MainView.swift */,
 				96E38D30274F878F000F0BCC /* RoundGradientView.swift */,
 				96E38D36274FB348000F0BCC /* BackgroundView.swift */,
-				96E38D38275016AC000F0BCC /* CustomColors.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";

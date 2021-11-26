@@ -19,7 +19,7 @@ class StaticTVCell: UITableViewCell {
     @IBOutlet weak var feelsLike: UILabel!
     
     override func awakeFromNib() {
-        background.
+        
         super.awakeFromNib()
     }
     

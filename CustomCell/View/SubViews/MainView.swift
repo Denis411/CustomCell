@@ -25,10 +25,6 @@ class MainView: UIView {
         setUpBackgroundView()
         setUpRoundGradientFrame()
     }
-    
-    
-    
-    
 //  MARK: -- Subviews
     
     func setUpRoundGradientFrame() {

@@ -35,12 +35,12 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: StaticTVCell.identifier) as! StaticTVCell
-        cell.label.text = "Fuck this shit"
+//        cell.label.text = "Fuck this shit"
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        300
+        280
     }
 
 }

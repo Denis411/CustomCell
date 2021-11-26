@@ -11,26 +11,21 @@ class StaticTVCell: UITableViewCell {
 
     static let identifier = "StaticTVCell"
     
+    
+    @IBOutlet weak var background: MainView!
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var weatherImage: UIImageView!
     @IBOutlet weak var temperature: UILabel!
     @IBOutlet weak var feelsLike: UILabel!
     
     override func awakeFromNib() {
+        background.
         super.awakeFromNib()
-        
     }
     
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-    }
-    
-    func setUpFonts() {
-        
-        
-        
-        
     }
     
 }

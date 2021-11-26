@@ -14,7 +14,7 @@
 		96D2D5942750EBAE00D96D03 /* Manrope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96D2D58D2750EBAD00D96D03 /* Manrope-Regular.ttf */; };
 		96D2D5952750EBAE00D96D03 /* Manrope-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96D2D58E2750EBAE00D96D03 /* Manrope-ExtraBold.ttf */; };
 		96D2D5962750EBAE00D96D03 /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96D2D58F2750EBAE00D96D03 /* Manrope-SemiBold.ttf */; };
-		96D2D5982750EE3000D96D03 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2D5972750EE3000D96D03 /* Fonts.swift */; };
+		96D2D5982750EE3000D96D03 /* ManropeFontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2D5972750EE3000D96D03 /* ManropeFontSize.swift */; };
 		96E38D1B274F7E01000F0BCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E38D1A274F7E01000F0BCC /* AppDelegate.swift */; };
 		96E38D1D274F7E01000F0BCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E38D1C274F7E01000F0BCC /* SceneDelegate.swift */; };
 		96E38D1F274F7E01000F0BCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E38D1E274F7E01000F0BCC /* ViewController.swift */; };
@@ -24,7 +24,7 @@
 		96E38D31274F878F000F0BCC /* RoundGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E38D30274F878F000F0BCC /* RoundGradientView.swift */; };
 		96E38D34274FB0F2000F0BCC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E38D33274FB0F2000F0BCC /* MainView.swift */; };
 		96E38D37274FB348000F0BCC /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E38D36274FB348000F0BCC /* BackgroundView.swift */; };
-		96E38D39275016AC000F0BCC /* GradientColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E38D38275016AC000F0BCC /* GradientColors.swift */; };
+		96E38D39275016AC000F0BCC /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E38D38275016AC000F0BCC /* CustomColors.swift */; };
 		96E38D3E2750C00D000F0BCC /* StaticTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E38D3C2750C00D000F0BCC /* StaticTVCell.swift */; };
 		96E38D3F2750C00D000F0BCC /* StaticTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E38D3D2750C00D000F0BCC /* StaticTVCell.xib */; };
 /* End PBXBuildFile section */
@@ -37,7 +37,7 @@
 		96D2D58D2750EBAD00D96D03 /* Manrope-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Regular.ttf"; sourceTree = "<group>"; };
 		96D2D58E2750EBAE00D96D03 /* Manrope-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraBold.ttf"; sourceTree = "<group>"; };
 		96D2D58F2750EBAE00D96D03 /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
-		96D2D5972750EE3000D96D03 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		96D2D5972750EE3000D96D03 /* ManropeFontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManropeFontSize.swift; sourceTree = "<group>"; };
 		96E38D17274F7E01000F0BCC /* CustomCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E38D1A274F7E01000F0BCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96E38D1C274F7E01000F0BCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 		96E38D30274F878F000F0BCC /* RoundGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundGradientView.swift; sourceTree = "<group>"; };
 		96E38D33274FB0F2000F0BCC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		96E38D36274FB348000F0BCC /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
-		96E38D38275016AC000F0BCC /* GradientColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientColors.swift; sourceTree = "<group>"; };
+		96E38D38275016AC000F0BCC /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		96E38D3C2750C00D000F0BCC /* StaticTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticTVCell.swift; sourceTree = "<group>"; };
 		96E38D3D2750C00D000F0BCC /* StaticTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StaticTVCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,7 +75,7 @@
 				96D2D58B2750EBAD00D96D03 /* Manrope-Medium.ttf */,
 				96D2D58D2750EBAD00D96D03 /* Manrope-Regular.ttf */,
 				96D2D58F2750EBAE00D96D03 /* Manrope-SemiBold.ttf */,
-				96D2D5972750EE3000D96D03 /* Fonts.swift */,
+				96D2D5972750EE3000D96D03 /* ManropeFontSize.swift */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -136,7 +136,7 @@
 				96E38D33274FB0F2000F0BCC /* MainView.swift */,
 				96E38D30274F878F000F0BCC /* RoundGradientView.swift */,
 				96E38D36274FB348000F0BCC /* BackgroundView.swift */,
-				96E38D38275016AC000F0BCC /* GradientColors.swift */,
+				96E38D38275016AC000F0BCC /* CustomColors.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -219,14 +219,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96E38D39275016AC000F0BCC /* GradientColors.swift in Sources */,
+				96E38D39275016AC000F0BCC /* CustomColors.swift in Sources */,
 				96E38D1F274F7E01000F0BCC /* ViewController.swift in Sources */,
 				96E38D34274FB0F2000F0BCC /* MainView.swift in Sources */,
 				96E38D37274FB348000F0BCC /* BackgroundView.swift in Sources */,
 				96E38D31274F878F000F0BCC /* RoundGradientView.swift in Sources */,
 				96E38D1B274F7E01000F0BCC /* AppDelegate.swift in Sources */,
 				96E38D1D274F7E01000F0BCC /* SceneDelegate.swift in Sources */,
-				96D2D5982750EE3000D96D03 /* Fonts.swift in Sources */,
+				96D2D5982750EE3000D96D03 /* ManropeFontSize.swift in Sources */,
 				96E38D3E2750C00D000F0BCC /* StaticTVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

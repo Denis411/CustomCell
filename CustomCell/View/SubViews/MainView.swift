@@ -12,8 +12,9 @@ import UIKit
 /// 1) distance - distance bewteen the top of self and the round gradient,
 /// 2) multiplier - visible "corner radius" of round gradient
 @IBDesignable
-class MainView: UIView {
-
+final class MainView: UIView {
+    
+    public var colorStratagy: ColorStratagy
     public var distance: CGFloat = 105.73
     public var multiplier: CGFloat = 1.2
     
@@ -25,7 +26,16 @@ class MainView: UIView {
         setUpBackgroundView()
         setUpRoundGradientFrame()
     }
-//  MARK: -- Subviews
+//  MARK: -- INITs
+    init(frame: CGRect, colorStratagy: ColorStratagy) {
+        super.init(frame: frame)
+        self.colorStratagy = colorStratagy
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    //  MARK: -- Subviews
     
     func setUpRoundGradientFrame() {
         roundGradient.frame = CGRect(x: 0,
@@ -42,5 +52,13 @@ class MainView: UIView {
                                       width: self.bounds.width,
                                       height: self.bounds.height)
         self.addSubview(backgroundView)
+    }
+    
+    func applyColorStratagy() {
+        roundGradient.gradient.colors = [colorStratagy.topColorRoundView,
+                                         colorStratagy.bottomColorRoundView]
+        
+        backgroundView.backgroundGradient.colors = [colorStratagy.topColorBackground,
+                                                    colorStratagy.bottomColorBackground]
     }
 }

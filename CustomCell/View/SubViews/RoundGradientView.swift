@@ -8,9 +8,9 @@
 import UIKit
 
 /// A UIView with a round gradient
-class RoundGradientView: UIView {
+final class RoundGradientView: UIView {
 
-    private var gradient: CAGradientLayer = {
+     var gradient: CAGradientLayer = {
        let gradient = CAGradientLayer()
         gradient.colors = [topRoundGradient.cgColor, bottomRoundGradient.cgColor]
         return gradient
@@ -38,4 +38,5 @@ class RoundGradientView: UIView {
                                 height: height)
         self.layer.addSublayer(gradient)
     }
+    
 }

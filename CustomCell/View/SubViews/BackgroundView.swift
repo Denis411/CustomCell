@@ -8,9 +8,9 @@
 import UIKit
 
 /// A UIView  with a top-to-bottom gradient
-class BackgroundView: UIView {
+final class BackgroundView: UIView {
 
-    private let backgroundGradient = CAGradientLayer()
+    var backgroundGradient = CAGradientLayer()
     
     override func layoutSubviews() {
         super.layoutSubviews()
